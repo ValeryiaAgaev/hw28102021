@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">
+</head>
+<!--
+https://getbootstrap.com/docs/5.1/components/navs-tabs/
+
+1. На странице в левой части постоянный список пользователей.
+2. В правой части отображены ссылки-табуляторы "Полная информация", "Задачи", "Посты", "Фотоальбомы"
+3. При клике на ссылку-табулятор соответствующая информация отображается на экране, а все остальные не видны
+4. При смене пользователя, с песочницы получаем всю его необходимую информацию, а вкладка "Информация" автоматически активируется
+-->
+<body>
+<div class="left" id="userList"></div>
+
+<div class="right" id="navTabs">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Full Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">ToDo List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Posts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Photo Albums</a>
+        </li>
+    </ul>
+</div>
+
+<div class="infoBox" id="infoBox"></div>
+<script src="./app.js"></script>
+</body>
+</html>
